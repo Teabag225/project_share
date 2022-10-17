@@ -11,17 +11,43 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
     /> -->
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="./normalize.css" />
+
     <link rel="stylesheet" href="/static/css/index.css" />
-    <link rel="stylesheet" href="/kdt_random/random.css" />
+    <link rel="stylesheet" href="/static/css/random.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="main-container">
       <header class="menu">
-        메뉴 들어갈 곳
-        <ul>
-          <li>메뉴1</li>
-          <li>메뉴2</li>
-        </ul>
+        <div class="sidenav">
+          <nav class="list-menu">
+            <div class="logo">
+              <img class="menu" src="/static/image/로고1.png" alt="점메추" />
+            </div>
+            <div class="icon"><i class="bi bi-list"></i></div>
+
+            <ul class="ul-list">
+              <a class="cat" href="#">Home</a>
+              <a class="dropdown-btn">
+                정산 게임
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-container">
+                <a class="cat" href="#">사다리게임</a>
+                <a class="cat" href="#">Link 2</a>
+                <a class="cat" href="#">Link 3</a>
+              </div>
+              <a class="cat" href="#">계산기</a>
+              <a class="cat" href="#">팀원 소개</a>
+            </ul>
+          </nav>
+        </div>
       </header>
       <div class="main">
         <div>
@@ -40,17 +66,13 @@
             onblur="this.placeholder='찾고 싶은 메뉴를 입력해 주세요'"
           />
           <button id="submit" type="submit">
-            <img src="/images/search.svg" />
+            <img src="/static/image/search.svg" />
           </button>
         </form>
-        <div class="msg">
-          <h4>메뉴 랜덤 선택</h4>
-        </div>
         <div class="random">
           <div class="receipt">
             <div class="title_text">
-              <h1>Lunch</h1>
-              <h3>menu pick</h3>
+              <h2>메뉴 랜덤 선택</h2>
             </div>
             <div class="menu_print">
               <h2></h2>
@@ -58,57 +80,48 @@
             <div class="menu_slot">
               <div class="slot_container">
                 <ul class="slide_box">
-                  <li>카레</li>
-                  <li>우동</li>
-                  <li>햄버거</li>
                   <li>냉면</li>
-                  <li>마라탕</li>
-                  <li>KDT</li>
-                  <li>졸려워</li>
-                  <li>집</li>
+                  <li>분식</li>
+                  <li>국밥</li>
+                  <li>국수</li>
+                  <li>중식</li>
+                  <li>핫도그</li>
+                  <li>초밥</li>
+                  <li>부대찌개</li>
+                  <li>돈까스</li>
+                  <li>토스트</li>
+                  <li>패스트푸드</li>
+                  <li>컵밥</li>
+                  <li>백반</li>
                 </ul>
               </div>
             </div>
-            <div class="main_text">
-              <p>DISTANCE<span class="span">:??m</span></p>
-              <p>COST&<em>:?000won</em></p>
-              <p>LIKE<span class="span">:♥♥♥♥♥</span></p>
-              <br />
-              <p>TOTAL<span>100% like it</span></p>
-            </div>
-            <div class="btn_area">
-              <button id="pick" class="r-btn" onclick="lunchIs()">
-                Pick menu
-              </button>
-              <button id="reset" class="r-btn" onclick="reset()">Reset</button>
-            </div>
           </div>
         </div>
+        <div class="container">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">정산하기</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">웹 소개</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">팀원소개</a>
+              </li>
+            </ul>
+            <p class="text text-center text-muted">© 2022 Company, Inc</p>
+          </footer>
+        </div>
       </div>
-      <!-- <div class="container">
-        <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">Features</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">FAQs</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-muted">About</a>
-            </li>
-          </ul>
-          <p class="text-center text-muted">© 2022 Company, Inc</p>
-        </footer> -->
     </div>
-    <script src="./index.js"></script>
-    <script src="/kdt_random/random.js"></script>
+    <!-- <script src="./index.js"></script> -->
+    <script src="/static/js/random.js"></script>
+    <script src="/static/js/tindex4.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

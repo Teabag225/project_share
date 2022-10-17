@@ -97,36 +97,12 @@ img {
   padding-right: 8px;
 }
 
-/* .toggle-menu {
-    display: block;
-    background-color: green;
-    padding: 0 2rem;
-}
-
-.toggle-menu-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.toggle-menu-container > a {
-    margin: 12px 0;
-}
-
-.d-none {
-    display: none;
-} */
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-width: 620px) {
-  .sidenav, .sidenav .cat, .img .container {
+  .container {
     width: 100%;
   }
 
-  /* header.menu {
-  width: 30vw;
-  background-color: brown;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  } */
+ 
 } 
