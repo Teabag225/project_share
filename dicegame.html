@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/dicegame.css">
+    <title>주사위 던지기</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>주사위 던지기</h1>
+        <h2 class="result"> 점심 쏘실분 </h2>
+
+        <div class="dice-area" id="user1">
+            <p class="user1">User1</p>
+            <img src="./static/image/question.png" height='100%' alt="1">
+        </div>
+        <div class="dice-area" id="user2">
+            <p class="user2">User2</p>
+            <img src="./static/image/question.png" height='100%' alt="2">
+        </div>
+        <div class="dice-area noshow" id='user3'>
+            <p class=>User3</p>
+            <img src="./static/image/question.png" height='100%' alt="3">
+        </div>
+        <div class="dice-area noshow" id='user4'>
+            <p class=>User4</p>
+            <img src="./static/image/question.png" height='100%' alt="4">
+        </div>
+        <div class="dice-area noshow" id='user5'>
+            <p class=>User5</p>
+            <img src="./static/image/question.png" height='100%' alt="5">
+        </div>
+        <div class="dice-area noshow" id='user6'>
+            <p class=>User6</p>
+            <img src="./static/image/question.png" height='100%' alt="5">
+        </div>
+    </div>
+
+    <div class="but">
+        <button class="add" type="button" onclick="add();">유저 추가</button>
+        <button class='remove' type="button" onclick="remove();">유저 제거</button>
+        <button type="button" onclick="run();">던지기</button>
+        <button type="button"><a href="dicegame.html">초기화</a></button>
+    </div>
+
+
+    <script src="./static/js/dicegame.js"></script>
+</body>
+
+</html>

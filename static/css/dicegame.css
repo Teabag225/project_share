@@ -1,0 +1,64 @@
+/* 배경색 */
+body {
+    background-color: aquamarine;
+}
+
+/* 내용물 정렬 */
+.wrapper {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 5rem;
+    color: white;
+    ;
+}
+
+.dice-area {
+    margin: 0px 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+p {
+    font-size: 2rem;
+    color: white;
+}
+
+/* 이미지 크기  */
+img {
+    width: 200px;
+    height: 200px;
+}
+
+/* 텍스트 중앙 정렬 */
+.but {
+    text-align: center;
+}
+
+/* 버튼 */
+button {
+    margin: 30px 0px 30px 30px;
+    width: 80px;
+    height: 30px;
+    font-size: 1rem;
+}
+
+/* 주사위 안보이기 */
+.noshow {
+    display: none;
+}
+
+/* 주사위 보이기 */
+.show {
+    display: inline-block;
+}
+
+/* 초기화 링크 텍스트 수정 */
+a {
+    text-decoration: none;
+    color: black;
+}
