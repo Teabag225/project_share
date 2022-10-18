@@ -80,7 +80,7 @@ img.menu {
 }
 
 .dropdown-btn {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 a.game {
@@ -104,7 +104,6 @@ a.game {
 
 .dropdown-container {
   display: none;
-  margin: 0 30px;
 }
 
 /* .fa-caret-down {
@@ -134,6 +133,10 @@ i.bi {
   margin-top: 3px;
   color: white;
   font-size: 30px;
+}
+
+.ul-list a {
+  font-size: 25px;
 }
 
 /* 토글 메뉴 */
@@ -212,11 +215,11 @@ div.ul-list {
   /* font-weight: 300; */
 }
 
-/* 타이틀, 검색창 */
-
 a.cat {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
+
+/* 타이틀, 검색창 */
 
 .main-container {
   width: 100vw;
@@ -278,7 +281,7 @@ form {
 
 .container {
   width: 70vw;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
