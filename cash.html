@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="menuForm">
+        <div class="wrapper">
+            <h1>우리 정산 해요</h1>
+
+            <label>메뉴</label>
+            <input id="menu" type="text"></input>
+
+            <label>가격</label>
+            <input id="price" type="text"></input>
+            <button id="submitButton" type="submit">+</button>
+        </div>
+        <hr>
+
+    </form>
+
+    <ol class="lists">
+
+
+    </ol>
+    <hr>
+    <p id="total"></p>
+    <label for="peo">총인원수</label>
+    <input id="people" type="number" value="1" onchange="autopay()"></input>
+    <hr>
+    <p id="payment"></p>
+
+
+
+    <script>
+        // 총합 
+        let tot = 0
+
+        // pay = 총합 / 인원수 
+        let pay = 1
+
+        //인원수 
+        const peopleInput = document.querySelector('input[id="people"]');
+
+        function userNameInput(e) {
+            //새로고침 방지
+            event.preventDefault();
+
+            //변수선언
+            const menu = document.getElementById('menu').value;
+            const price = Number(document.getElementById('price').value);
+
+            // 가격 더하기 
+
+            tot = price + Number(tot)
+
+            const result = document.getElementById('result');
+            const newList = document.createElement('li');
+            const ul = document.querySelector('.lists');
+
+
+            const minusBtn = document.createElement('button');
+            const BtnText = document.createTextNode('-');
+
+
+            newList.textContent = menu + price;
+
+
+            //뺴기버튼 -> 리스트에서 삭제
+            minusBtn.addEventListener('click', function () {
+
+                newList.parentNode.removeChild(newList);
+                minusBtn.parentNode.removeChild(minusBtn);
+            });
+
+            minusBtn.appendChild(BtnText);
+            ul.append(newList, minusBtn);
+
+            // Total 기능 
+            document.querySelector('#total').innerHTML = "총합 = " + tot
+
+            // pay = 총합 / 인원수 (+버튼 누르면 계산) 
+            pay = tot / peopleInput.value;
+            document.querySelector('#payment').innerHTML = "인당가격 = " + pay
+
+
+        }
+
+        //총 인원수 실시간 변경 감지 및 계산 
+        function autopay() {
+            // pay = 총합 / 인원수 (변경시 자동 계산) 
+            let pay = tot / peopleInput.value;
+            document.querySelector('#payment').innerHTML = "인당가격 = " + pay
+        }
+
+        submitButton.addEventListener('click', userNameInput, false);
+
+    </script>
+
+
+</body>
+
+</html>
