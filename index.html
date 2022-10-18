@@ -17,7 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
     <!-- Normalize.css -->
-    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="/static/css/normalize.css" />
 
     <link rel="stylesheet" href="/static/css/index.css" />
     <link rel="stylesheet" href="/static/css/random.css" />
@@ -30,25 +30,47 @@
             <div class="logo">
               <img class="menu" src="/static/image/로고1.png" alt="점메추" />
             </div>
-            <div class="icon"><i class="bi bi-list"></i></div>
+            <div href="#" class="icon"><i class="bi bi-list"></i>MENU</div>
 
-            <ul class="ul-list">
+            <div class="ul-list">
               <a class="cat" href="#">Home</a>
               <a class="dropdown-btn">
                 정산 게임
-                <i class="fa fa-caret-down"></i>
+                <!-- <i class="fa fa-caret-down"></i> -->
               </a>
               <div class="dropdown-container">
-                <a class="cat" href="#">사다리게임</a>
-                <a class="cat" href="#">Link 2</a>
-                <a class="cat" href="#">Link 3</a>
+                <a class="game" href="#">사다리게임</a>
+                <!-- <hr /> -->
+                <a class="game" href="#">Link 2</a>
+                <!-- <hr /> -->
+                <a class="game" href="#">Link 3</a>
               </div>
               <a class="cat" href="#">계산기</a>
               <a class="cat" href="#">팀원 소개</a>
-            </ul>
+            </div>
           </nav>
         </div>
       </header>
+
+      <!-- 토글 메뉴 -->
+
+      <nav class="toggle-menu d-none">
+        <div class="toggle-menu-list">
+          <a class="toggle-ls" href="#">Home</a>
+          <a class="toggle-ls toggle-dropdown-btn">
+            정산 게임
+            <!-- <i class="fa fa-caret-down"></i> -->
+          </a>
+          <div class="toggle-container">
+            <a class="t-game" href="#">사다리게임</a>
+            <a class="t-game" href="#">Link 2</a>
+            <a class="t-game" href="#">Link 3</a>
+          </div>
+          <a class="toggle-ls" href="#">계산기</a>
+          <a class="toggle-ls" href="#">팀원 소개</a>
+        </div>
+      </nav>
+
       <div class="main">
         <div>
           <h1 class="title">
@@ -108,7 +130,7 @@
                 <a href="#" class="nav-link px-2 text-muted">정산하기</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-muted">웹 소개</a>
+                <a href="#" class="nav-link px-2 text-muted">계산기</a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link px-2 text-muted">팀원소개</a>
@@ -123,5 +145,15 @@
     <script src="/static/js/random.js"></script>
     <script src="/static/js/tindex4.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // - [ ] 아이콘 클릭시 메뉴 열리기
+      // .icon-menu 클릭했을 때 .toggle-menu 요소에 .d-none 클래스 넣었다 뻈다 하기
+      const iconMenu = document.querySelector(".icon");
+      const toggleMenu = document.querySelector(".toggle-menu");
+
+      iconMenu.addEventListener("click", function () {
+        toggleMenu.classList.toggle("d-none");
+      });
+    </script>
   </body>
 </html>

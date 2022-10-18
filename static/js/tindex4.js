@@ -13,3 +13,18 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
+var t_dropdown = document.getElementsByClassName("toggle-dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  t_dropdown[i].addEventListener("click", function () {
+    this.classList.toggle("t_active");
+    var t_dropdownContent = this.nextElementSibling;
+    if (t_dropdownContent.style.display === "block") {
+      t_dropdownContent.style.display = "none";
+    } else {
+      t_dropdownContent.style.display = "block";
+    }
+  });
+}
