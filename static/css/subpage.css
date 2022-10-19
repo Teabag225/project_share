@@ -1,6 +1,6 @@
-/* 카드 */
+/* 카드
   
-  /* div.card-pop {
+  div.card-pop {
     width: 400px;
     height: 500px;
     background-color: aliceblue;
@@ -189,10 +189,18 @@
   div.title_text {
     margin-top: 30px;
   }
-  
   form {
     margin-top: 50px;
   }
+  /* 검색바 위치 옮기기 */
+  form input,
+   button {
+    margin-left: 30%;
+
+  }
+  /* sbp {
+    margin-left: 30%;
+  } */
   
   #search {
     width: 400px;
@@ -353,3 +361,12 @@
       justify-content: center;
     }
   }
+
+    .checked {
+      color: orange;
+    }
+
+    div.card {
+      width: 30%;
+      margin: 30px 0px 0px 15px;
+    }
