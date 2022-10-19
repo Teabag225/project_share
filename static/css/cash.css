@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "ChosunCentennial";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1.title {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+p.first {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p.second {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p.third {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+div.cal {
+  display: flex;
+  justify-content: right;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px dashed black;
+  padding-bottom: 5px;
+  margin: 0 30px;
+}
+
+.main-container {
+  text-align: center;
+  width: 600px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-family: "ChosunCentennial";
+}
+
+li {
+  margin: 0 100px;
+}
+
+button {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input {
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 170px;
+  height: 30px;
+}
+
+input#people {
+  width: 80px;
+}
+
+p#payment {
+  margin-left: 130px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+div.wrapper {
+  border-bottom: 2px dashed black;
+  padding-bottom: 20px;
+  margin: 0 30px;
+}
