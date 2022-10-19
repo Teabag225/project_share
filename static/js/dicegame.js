@@ -65,6 +65,8 @@ function run() {
     }
   }
   // LOSER text 노출
-  document.querySelector(".result").innerHTML =
-    "USER " + loser + "님 축하합니다! 밥사주세요!!!";
+
+  document.querySelector(
+    ".result"
+  ).innerHTML = `🥳 USER ${loser} 님 축하합니다! 밥사주세요!!!🥳`;
 }
