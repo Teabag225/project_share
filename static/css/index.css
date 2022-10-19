@@ -15,10 +15,18 @@
     margin-left : 100px ;
   } */
 
-@font-face {
+/* @font-face {
   font-family: "Cafe24Ssurround";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
     format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "ChosunCentennial";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -44,7 +52,8 @@ body {
 .sidenav {
   display: flex;
   flex-direction: column;
-  font-family: "Cafe24Ssurround";
+  /* font-family: "Cafe24Ssurround"; */
+  font-family: "ChosunCentennial";
   height: 100%; /*Full-height: remove this if you want "auto" height */
   width: 30vw; /* Set the width of the sidebar */
   /* position: flex; Fixed Sidebar (stay in place on scroll) */
@@ -220,7 +229,8 @@ div.ul-list {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  font-family: "Cafe24Ssurround";
+  /* font-family: "Cafe24Ssurround"; */
+  font-family: "ChosunCentennial";
 }
 
 div.main {
