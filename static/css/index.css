@@ -70,17 +70,15 @@ img.menu {
   /* margin-left: 240%; */
 }
 
-.cat,
-.dropdown-btn {
-  padding: 6px 8px 6px 16px;
+a.cat {
+  padding: 5px 20px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   color: black;
   /* display: block; */
-}
-
-.dropdown-btn {
-  margin-bottom: 30px;
+  background-color: rgb(195, 189, 189);
+  margin: 10px 50px;
+  border-radius: 20px;
 }
 
 a.game {
@@ -89,7 +87,7 @@ a.game {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  border-top: 1px solid black;
+  font-size: 20px;
 }
 
 .sidenav a:hover,
@@ -99,7 +97,7 @@ a.game {
 
 .active {
   color: black;
-  margin: 0 30px;
+  /* margin: 0 30px; */
 }
 
 .dropdown-container {
@@ -133,10 +131,6 @@ i.bi {
   margin-top: 3px;
   color: white;
   font-size: 30px;
-}
-
-.ul-list a {
-  font-size: 25px;
 }
 
 /* 토글 메뉴 */
@@ -215,9 +209,9 @@ div.ul-list {
   /* font-weight: 300; */
 }
 
-a.cat {
-  margin-bottom: 30px;
-}
+/* a.cat {
+
+} */
 
 /* 타이틀, 검색창 */
 
