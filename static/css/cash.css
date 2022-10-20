@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-h1.title {
+p.cash-title {
   margin-top: 30px;
   margin-bottom: 80px;
 }
@@ -30,6 +30,15 @@ p.third {
   font-weight: 700;
 }
 
+li {
+  font-size: 20px;
+}
+
+div.order-list {
+  display: flex;
+  height: 300px;
+}
+
 div.cal {
   display: flex;
   justify-content: right;
@@ -40,22 +49,25 @@ div.cal {
   margin: 0 30px;
 }
 
-.main-container {
+.cash-main-container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  width: 600px;
-  border: 2px solid black;
+  /* width: 600px; */
   border-radius: 20px;
   font-family: "ChosunCentennial";
 }
 
-li {
-  margin: 0 100px;
+div.order-list {
+  display: flex;
+  flex-direction: column;
 }
 
 button {
   background-color: white;
   border: none;
-  font-size: 20px;
+  padding: 5px;
+  font-size: 25px;
   font-weight: 700;
 }
 
@@ -64,14 +76,15 @@ input {
   border: 2px solid black;
   width: 170px;
   height: 30px;
+  padding-left: 10px;
 }
 
 input#people {
   width: 80px;
 }
 
-p#payment {
-  margin-left: 130px;
+p.payment {
+  margin-left: 300px;
   margin-top: 10px;
   font-size: 20px;
   font-weight: 700;

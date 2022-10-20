@@ -1,7 +1,23 @@
-@font-face {
+/* @font-face {
   font-family: "Cafe24Ssurround";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
     format("woff");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "OTWelcomeBA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeBA.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HBIOS-SYS";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/HBIOS-SYS.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -9,7 +25,8 @@
 /* 배경색 */
 body {
   background-color: white;
-  font-family: "Cafe24Ssurround";
+  font-family: "OTWelcomeBA";
+
   overflow: scroll;
 }
 
@@ -28,6 +45,7 @@ div.title {
 
 h1 {
   /* margin-top: 60px; */
+  font-family: "HBIOS-SYS";
   font-size: 3rem;
   color: black;
 }
@@ -37,6 +55,8 @@ span.tip {
 }
 
 h1.result {
+  font-family: "OTWelcomeBA";
+
   margin-top: 20px;
 }
 
