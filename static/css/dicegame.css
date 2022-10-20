@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 배경색 */
+body {
+  background-color: white;
+  font-family: "Cafe24Ssurround";
+  overflow: scroll;
+}
+
+/* 내용물 정렬 */
+.wrapper {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+div.title {
+  margin: 0 250px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+h1 {
+  /* margin-top: 60px; */
+  font-size: 3rem;
+  color: black;
+}
+
+span.tip {
+  color: red;
+}
+
+h1.result {
+  margin-top: 20px;
+}
+
+.dice-area {
+  margin: 0px 50px;
+  text-align: center;
+  display: inline-block;
+}
+
+p {
+  font-size: 1rem;
+  color: black;
+}
+
+/* 이미지 크기  */
+img {
+  width: 100px;
+  height: 160px;
+}
+
+.dice-area img {
+  width: 200px;
+}
+
+/* 텍스트 중앙 정렬 */
+.but {
+  text-align: center;
+}
+
+/* 버튼 */
+button {
+  cursor: pointer;
+  margin: 30px 0px 30px 30px;
+  width: 100px;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid;
+  background-color: aquamarine;
+}
+
+button:hover {
+  background-color: rgb(191, 232, 218);
+}
+/* 주사위 안보이기 */
+.noshow {
+  display: none;
+}
+
+/* 주사위 보이기 */
+.show {
+  display: inline-block;
+}
+
+/* 초기화 링크 텍스트 수정 */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* img.wow {
+  width: 80px;
+  height: 50px;
+  display: none;
+} */
+
+/* @keyframes slide-in {
+  0% {
+    transform: scale(2) rotate(60deg);
+    opacity: 0;
+  }
+} */
+
+@keyframes bump-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+particule {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  box-shadow: 1px 1px 4px #eb6383;
+}

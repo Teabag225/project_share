@@ -3,7 +3,7 @@ var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
+  dropdown[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var dropdownContent = this.nextElementSibling;
     if (dropdownContent.style.display === "block") {
@@ -14,3 +14,17 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
+var t_dropdown = document.getElementsByClassName("toggle-dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  t_dropdown[i].addEventListener("click", function () {
+    this.classList.toggle("t_active");
+    var t_dropdownContent = this.nextElementSibling;
+    if (t_dropdownContent.style.display === "block") {
+      t_dropdownContent.style.display = "none";
+    } else {
+      t_dropdownContent.style.display = "block";
+    }
+  });
+}
