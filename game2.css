@@ -1,0 +1,146 @@
+body {
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.cardimg {
+  width: 200px;
+  height: 270px;
+  position: absolute;
+  /* transform: rotate(90deg); */
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card1,
+#card2,
+#card3,
+#card4,
+#card5,
+#card6 {
+  transition: 0.5s;
+}
+.box:hover #card1 {
+  transform: translateX(-200px) rotate(-30deg);
+}
+.box:hover #card2 {
+  transform: translateX(-100px) rotate(-15deg);
+}
+.box:hover #card3 {
+  transform: translateX(0px) rotate(0deg);
+}
+.box:hover #card4 {
+  transform: translateX(100px) rotate(15deg);
+}
+.box:hover #card5 {
+  transform: translateX(200px) rotate(30deg);
+}
+.box:hover #card6 {
+  transform: translateX(300px) rotate(45deg);
+}
+
+.card:hover #card1 {
+  cursor: pointer;
+
+  transform: translateY(-65px) translateX(-200px);
+}
+
+.card:hover #card2 {
+  cursor: pointer;
+
+  transform: translateY(-65px) translateX(-100px);
+}
+
+.card:hover #card3 {
+  cursor: pointer;
+
+  transform: translateY(-65px) translateX(0px);
+}
+
+.card:hover #card4 {
+  cursor: pointer;
+
+  transform: translateY(-65px) translateX(100px);
+}
+
+.card:hover #card5 {
+  cursor: pointer;
+
+  transform: translateY(-65px) translateX(200px);
+}
+
+.card:hover #card6 {
+  cursor: pointer;
+
+  transform: translateY(-65px) translateX(300px);
+}
+
+button {
+  position: relative;
+
+  margin-left: 280px;
+
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-370px);
+}
+
+button img {
+  width: 30px;
+  height: 30px;
+}
+
+.slideUp {
+  animation: slideUp 1s;
+  animation-fill-mode: forwards;
+}
+
+.slideDown {
+  animation: slideDown 1s;
+  animation-fill-mode: forwards;
+}
+
+.rotateCard {
+  animation: rotateCard 1s linear 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-500px);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-500px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateCard {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(990deg) scale(3);
+    z-index: 1000;
+  }
+}
