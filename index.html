@@ -20,7 +20,14 @@
     <link rel="stylesheet" href="/static/css/normalize.css" />
 
     <link rel="stylesheet" href="/static/css/index.css" />
-    <link rel="stylesheet" href="/kdt_random/random.css" />
+    <link rel="stylesheet" href="/static/css/random.css" />
+    <link rel="stylesheet" href="/static/css/cash.css" />
+    <!-- CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="main-container">
@@ -39,7 +46,7 @@
                 <a class="game" href="#">Link 2</a>
                 <a class="game" href="#">Link 3</a>
               </div>
-              <a class="cat" href="./cash.html">계산기</a>
+              <a class="cat popup2">계산기</a>
               <a class="cat" href="#">팀원 소개</a>
             </div>
           </nav>
@@ -60,7 +67,7 @@
             <a class="t-game" href="#">Link 2</a>
             <a class="t-game" href="#">Link 3</a>
           </div>
-          <a class="toggle-ls" href="./cash.html">계산기</a>
+          <a class="toggle-ls popup">계산기</a>
           <a class="toggle-ls" href="#">팀원 소개</a>
         </div>
       </nav>
@@ -97,19 +104,111 @@
               <div class="slot_container">
                 <ul class="slide_box">
                   <li>냉면</li>
-                  <li>분식</li>
+                  <li>떡복이</li>
+                  <li>김밥</li>
                   <li>국밥</li>
-                  <li>국수</li>
-                  <li>중식</li>
+                  <li>잔치국수</li>
+                  <li>짜장면</li>
+                  <li>우동</li>
                   <li>핫도그</li>
                   <li>초밥</li>
                   <li>부대찌개</li>
                   <li>돈까스</li>
                   <li>토스트</li>
                   <li>패스트푸드</li>
+                  <li>편의점</li>
                   <li>컵밥</li>
                   <li>백반</li>
+                  <li>파스타</li>
+                  <li>스테이크</li>
+                  <li>짬뽕</li>
+                  <li>제육볶음</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div id="modal" class="modal-overlay">
+          <div class="modal-window">
+            <div class="close-area">X</div>
+            <div class="content">
+              <div class="cash-main-container">
+                메뉴 입력창 부분
+                <form id="menuForm">
+                  <h1 class="cash-title">우리 정산 해요</h1>
+                  <div class="wrapper">
+                    <p class="first">주문 입력</p>
+                    <label>메뉴</label>
+                    <input id="menu" type="text" />
+
+                    <label>가격</label>
+                    <input id="price" type="text" />
+                    <button id="submitButton" type="submit">+</button>
+                  </div>
+                </form>
+                입력 결과 창 부분
+                <div class="order-list">
+                  <p class="second">주문 리스트</p>
+                  <ol class="lists"></ol>
+                </div>
+                 총합 부분
+                <div class="cal">
+                  <p id="total"></p>
+                  <label class="peo" for="peo"> / 총 인원수 :</label>
+                  <input
+                    id="people"
+                    type="number"
+                    value="1"
+                    onchange="autopay()"
+                  />
+                </div>
+                <div class="result">
+                  <p class="payment">= 인당 <span id="payment"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="modal modal-overlay" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="close-area">X</div>
+              <div class="modal-body">
+                <div class="cash-main-container">
+                  <!-- 메뉴 입력창 부분 -->
+                  <form id="menuForm">
+                    <h1 class="cash-title">우리 정산 해요</h1>
+                    <div class="wrapper">
+                      <p class="first">주문 입력</p>
+                      <label>메뉴</label>
+                      <input id="menu" type="text" />
+
+                      <label>가격</label>
+                      <input id="price" type="text" />
+                      <button id="submitButton" type="submit">+</button>
+                    </div>
+                  </form>
+                  <!-- 입력 결과 창 부분 -->
+                  <div class="order-list">
+                    <p class="second">주문 리스트</p>
+                    <ol class="lists"></ol>
+                  </div>
+                  <!-- 총합 부분 -->
+                  <div class="cal">
+                    <p id="total"></p>
+                    <label class="peo" for="peo"> / 총 인원수 : </label>
+                    <input
+                      id="people"
+                      type="number"
+                      value="1"
+                      onchange="autopay()"
+                    />
+                  </div>
+                  <div class="result">
+                    <p class="payment">= 인당 <span id="payment"></span></p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -137,18 +236,9 @@
     </div>
     <!-- <script src="./index.js"></script> -->
     <!-- <script src="/static/js/random.js"></script> -->
-    <script src="/kdt_random/random.js"></script>
-    <script src="/static/js/tindex4.js"></script>
+    <script src="/static/js/random.js"></script>
+    <script src="/static/js/index.js"></script>
+    <script src="/static/js/cash.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // - [ ] 아이콘 클릭시 메뉴 열리기
-      // .icon-menu 클릭했을 때 .toggle-menu 요소에 .d-none 클래스 넣었다 뻈다 하기
-      const iconMenu = document.querySelector(".icon");
-      const toggleMenu = document.querySelector(".toggle-menu");
-
-      iconMenu.addEventListener("click", function () {
-        toggleMenu.classList.toggle("d-none");
-      });
-    </script>
   </body>
 </html>

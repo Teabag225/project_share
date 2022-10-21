@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "ChosunCentennial";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p.cash-title {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+p.first {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p.second {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+p.third {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+li {
+  font-size: 20px;
+}
+
+div.order-list {
+  display: flex;
+  height: 300px;
+}
+
+div.cal {
+  display: flex;
+  justify-content: right;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px dashed black;
+  padding-bottom: 5px;
+  margin: 0 30px;
+}
+
+.cash-main-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* width: 600px; */
+  border-radius: 20px;
+  font-family: "ChosunCentennial";
+}
+
+div.order-list {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+input {
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 170px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+input#people {
+  width: 80px;
+}
+
+p.payment {
+  margin-left: 300px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+div.wrapper {
+  border-bottom: 2px dashed black;
+  padding-bottom: 20px;
+  margin: 0 30px;
+}
