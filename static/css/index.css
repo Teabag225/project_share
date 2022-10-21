@@ -23,10 +23,18 @@
   font-style: normal;
 } */
 
-@font-face {
+/* @font-face {
   font-family: "ChosunCentennial";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2")
     format("woff2");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "GyeonggiTitleM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -52,8 +60,8 @@ body {
 .sidenav {
   display: flex;
   flex-direction: column;
-  /* font-family: "ChosunCentennial"; */
-  font-family: "ChosunCentennial";
+  font-family: "GyeonggiTitleM";
+
   height: 100%; /*Full-height: remove this if you want "auto" height */
   width: 30vw; /* Set the width of the sidebar */
   /* position: flex; Fixed Sidebar (stay in place on scroll) */
@@ -68,15 +76,12 @@ body {
 
 img.menu {
   /* margin: auto; */
-  width: 200px;
-  height: 200px;
+  margin-top: 60px;
+  width: 150px;
+  height: 150px;
   /* display: flex; */
   align-items: center;
   position: relative;
-
-  /* border-radius: 25vw;
-  padding: 6px 8px 6px 16px; */
-  /* margin-left: 240%; */
 }
 
 a.cat {
@@ -85,9 +90,8 @@ a.cat {
   font-size: 25px;
   color: black;
   /* display: block; */
-  background-color: rgb(195, 189, 189);
   margin: 10px 50px;
-  border-radius: 20px;
+  font-weight: 700;
 }
 
 a.game {
@@ -101,7 +105,9 @@ a.game {
 
 .sidenav a:hover,
 .dropdown-btn:hover {
-  color: #847f7f;
+  transform: translateY(-10px);
+  cursor: pointer;
+  text-shadow: 12px 12px 20px #28262675;
 }
 
 .active {
@@ -218,10 +224,6 @@ div.ul-list {
   /* font-weight: 300; */
 }
 
-/* a.cat {
-
-} */
-
 /* 타이틀, 검색창 */
 
 .main-container {
@@ -229,8 +231,7 @@ div.ul-list {
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  /* font-family: "ChosunCentennial"; */
-  font-family: "ChosunCentennial";
+  font-family: "GyeonggiTitleM";
 }
 
 div.main {
@@ -244,35 +245,33 @@ div.main {
 
 h1.title {
   font-size: 4rem;
-  margin-top: 60px;
+  margin-top: 100px;
   text-shadow: 5px 5px 10px gray;
 }
 
 span.small {
   font-size: 2rem;
+  padding: 0 10px;
 }
 
 div.title_text {
   margin-top: 30px;
 }
 
-form {
-  margin-top: 50px;
-}
-
 #search {
   width: 400px;
-  height: 40px;
-  border: 2px solid black;
+  height: 45px;
+  border: 3px solid black;
   border-radius: 10px;
   padding-left: 20px;
 }
 
 #submit {
+  margin-top: 40px;
   cursor: pointer;
-  height: 40px;
+  height: 46px;
   width: 40px;
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 10px;
   background-color: white;
 }
@@ -386,14 +385,15 @@ a.nav-link {
   div.icon {
     display: flex;
     position: absolute;
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100vw;
     justify-content: center;
     align-items: center;
   }
 
   img.menu {
-    /* margin: auto; */
+    margin-top: 10px;
+
     width: 100px;
     height: 100px;
     /* display: flex; */
