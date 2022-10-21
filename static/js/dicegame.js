@@ -24,6 +24,9 @@ function add() {
   } else {
     alert("최대 6인입니다.");
   }
+
+  var location = document.querySelector(".add").offsetTop;
+  window.scrollTo({ top: location, behavior: "smooth" });
 }
 
 //유저 제거하기
@@ -57,7 +60,7 @@ function run() {
     // 유저숫자만큼 반복
     //주사위 숫자만큼 이미지 가져오기
     let dice = "./static/image/dice" + numArray[i] + ".png";
-    document.querySelectorAll("img")[i].setAttribute("src", dice);
+    document.querySelectorAll("img")[i + 1].setAttribute("src", dice);
     if (numArray[i] < min) {
       loser = i + 1;
       min = numArray[i]; // 최소값 추가하기
