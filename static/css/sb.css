@@ -1,0 +1,29 @@
+
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+
+}
+
+div.card {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .25rem;
+    margin-top: 50px;
+  
+}
+
+.hide {
+    display: none;
+}
+/* 
+.card > .card-title {
+    margin-bottom: .25rem;
+} */
+
+/* .card > .card-text {
+    font-size: .8rem;
+}  */

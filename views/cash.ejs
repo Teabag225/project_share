@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="/static/css/normalize.css" />
+
+    <link rel="stylesheet" href="/static/css/cash.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!-- 메뉴 입력창 부분 -->
+      <form id="menuForm">
+        <h1 class="title">우리 정산 해요</h1>
+        <div class="wrapper">
+          <p class="first">주문 입력</p>
+          <label>메뉴</label>
+          <input id="menu" type="text" />
+
+          <label>가격</label>
+          <input id="price" type="text" />
+          <button id="submitButton" type="submit">+</button>
+        </div>
+      </form>
+      <!-- 입력 결과 창 부분-->
+      <div class="order-list">
+        <p class="second">주문 리스트</p>
+        <ol class="lists"></ol>
+      </div>
+      <!--  총합 부분 -->
+      <div class="cal">
+        <p id="total"></p>
+        <label class="peo" for="peo"> / 총 인원수 :</label>
+        <input id="people" type="number" value="1" onchange="autopay()" />
+      </div>
+      <div class="result">
+        <p id="payment">= 인당</p>
+      </div>
+    </div>
+
+    <script>
+      // 총합
+      let tot = 0;
+
+      // pay = 총합 / 인원수
+      let pay = 1;
+
+      //인원수
+      const peopleInput = document.querySelector('input[id="people"]');
+
+      function userNameInput(e) {
+        //새로고침 방지
+        event.preventDefault();
+
+        //변수선언
+        let menu = document.getElementById("menu").value;
+        let price = Number(document.getElementById("price").value);
+
+        // 가격 더하기
+
+        tot = price + Number(tot);
+
+        const result = document.getElementById("result");
+        const newList = document.createElement("li");
+        const ul = document.querySelector(".lists");
+
+        const minusBtn = document.createElement("button");
+        const BtnText = document.createTextNode("-");
+
+        newList.textContent = menu + "  " + price;
+
+        //뺴기버튼 -> 리스트에서 삭제
+        minusBtn.addEventListener("click", function () {
+          newList.parentNode.removeChild(newList);
+          minusBtn.parentNode.removeChild(minusBtn);
+          tot = tot - price;
+          document.querySelector("#total").innerHTML = "= " + tot;
+          // pay = 총합 / 인원수 (+버튼 누르면 계산)
+          pay = tot / peopleInput.value;
+          document.querySelector("#payment").innerHTML = "= 인당 " + pay + "원";
+        });
+
+        minusBtn.style.color = "red";
+        minusBtn.appendChild(BtnText);
+        newList.append(minusBtn);
+        ul.append(newList);
+
+        document.getElementById("menu").value = " ";
+        document.getElementById("price").value = " ";
+        // Total 기능
+        document.querySelector("#total").innerHTML = "= " + tot;
+
+        // pay = 총합 / 인원수 (+버튼 누르면 계산)
+        pay = tot / peopleInput.value;
+        document.querySelector("#payment").innerHTML = " = 인당 " + pay + "원";
+      }
+
+      //총 인원수 실시간 변경 감지 및 계산
+      function autopay() {
+        // pay = 총합 / 인원수 (변경시 자동 계산)
+        let pay = tot / peopleInput.value;
+        document.querySelector("#payment").innerHTML = " = 인당 " + pay + "원";
+      }
+
+      submitButton.addEventListener("click", userNameInput, false);
+    </script>
+  </body>
+</html>

@@ -195,7 +195,7 @@
   /* 검색바 위치 옮기기 */
   form input,
    button {
-    margin-left: 30%;
+    margin-left: 12rem;  
 
   }
   /* sbp {
@@ -369,4 +369,13 @@
     div.card {
       width: 30%;
       margin: 30px 0px 0px 15px;
+      
     }
+
+    /* 초기화 링크 텍스트 수정 */
+.card > a {
+  text-decoration: none;
+  color: black;
+}
+/* card 위치 auto-fill로 자동 위치 설정 */
+  /* grid-template-columns: repeat(auto-fill); */
