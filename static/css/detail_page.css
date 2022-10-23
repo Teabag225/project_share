@@ -11,12 +11,21 @@
 } */
 
 @font-face {
-  font-family: "ChosunCentennial";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2")
-    format("woff2");
+  font-family: "KyoboHandwriting2020A";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "GyeonggiTitleM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* body {
   font-family: "Cafe24Ssurround";
 } */
@@ -39,156 +48,156 @@
 } */
 
 body {
-  font-family: "ChosunCentennial";
+  font-family: "GyeonggiTitleM";
 }
 
-.receipt {
-  width: 100%;
-  height: 100%;
-  /* margin-top: 20px; */
-  /* background-image: url("../img/paper.jpeg"); */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-  position: relative;
+div.line {
+  border-bottom: 2px solid black;
+  margin: 0 100px;
 }
 
-/* h1.name {
-  margin-bottom: 30px;
-} */
-
-p.menu-title {
+div.title {
   text-align: center;
+  margin-top: 160px;
+}
+
+h3 {
   font-size: 30px;
-  margin-top: 30px;
 }
 
-div.menu-list {
-  margin-top: 20px;
-  /* border: 2px solid black;
-  border-radius: 10px;
-  width: 1000px;
-  height: 500px; */
-}
-
-.receipt .title_text {
-  border-bottom: 1px dashed black;
-  /* margin-bottom: 20px; */
-  width: 100%;
-  text-align: center;
-}
-
-.receipt .title_text h1 {
-  /* font-family: "Orelega One", cursive; */
-  font-size: 50px;
-  margin-bottom: 0;
-}
-
-.receipt .title_text h3 {
-  /* font-family: "Orelega One", cursive; */
+h1 {
+  font-size: 60px;
   margin-bottom: 20px;
 }
 
-.carousel-item img {
-  width: 1000px;
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.info-logo {
+  width: 50px;
+  height: 40px;
+  margin-left: 10px;
+  font-size: 30px;
+  padding: 10px;
+}
+
+/* 메뉴 부분 */
+
+.menuls-title {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.menu1 img {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.menu2 img {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+div.menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 100px 200px 0 200px;
+  /* margin-left: 250px;
+  margin-right: 250px; */
+}
+
+div.menu1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+div.menu2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.menu1 .text {
+  margin-left: 150px;
+  font-size: 20px;
+}
+
+.menu2 .text {
+  margin-right: 150px;
+  font-size: 20px;
+}
+
+.name1 {
+  font-size: 30px;
+}
+
+.review {
+  margin-top: 30px;
+  font-family: "KyoboHandwriting2020A";
+}
+
+a {
+  margin-top: 80px;
+  font-size: 20px;
+}
+
+div.scroll {
+  display: flex;
+  justify-content: center;
+  animation: blink-effect 0.7s step-end infinite;
+}
+
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+
+.scroll img {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 850px) {
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    height: 1300px;
+  }
+  .menu-list li {
+    flex: 5;
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+    transition: all 3s;
+    opacity: 1;
+  }
+}
+
+.map-title {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+div.map {
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 40px 250px;
+  /* margin-bottom: 40px; */
   height: 500px;
 }
-
-/* .span,
-em {
-  display: inline-block;
-  width: 78px;
-  height: 21px;
-  text-align: left;
-  position: absolute;
-  right: 5px;
-} */
-
-/* .main_text p:last-child > span {
-  width: 120px;
-} */
-
-/* .menu_print {
-  position: absolute;
-  top: 40%;
-  font-size: 40px;
-  color: black;
-  transition: 0.5s;
-} */
-
-/* .receipt .main_text {
-  font-family: "Roboto Mono", monospace;
-  position: absolute;
-  left: 30px;
-  bottom: 5%;
-}
-
-.receipt .main_text p > em {
-  font-style: normal;
-}
-
-p:last-child {
-  border-top: 1px dashed black;
-  padding-top: 10px;
-  width: 250px;
-}
-
-.btn_area {
-  position: absolute;
-  bottom: -60px;
-  margin-top: 20px;
-}
-
-body:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-}
-
-button#pick,
-button#reset {
-  background: black;
-  color: #fff;
-  border: none;
-  position: relative;
-  height: 40px;
-  font-size: 1.4em;
-  padding: 0 1em;
-  cursor: pointer;
-  transition: 800ms ease all;
-  outline: none;
-  font-family: "Orelega One", cursive;
-}
-
-button#pick:hover,
-button#reset:hover {
-  background: #fff;
-  color: black;
-}
-
-button.r-btn:before,
-button.r-btn:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 2px;
-  width: 0;
-  background: black;
-  transition: 400ms ease all;
-}
-
-button.r-btn:after {
-  right: inherit;
-  top: inherit;
-  left: 0;
-  bottom: 0;
-}
-
-button.r-btn:hover:before,
-button.r-btn:hover:after {
-  width: 100%;
-  transition: 800ms ease all;
-} */
