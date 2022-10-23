@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/scratch.css">
+</head>
+
+<body>
+    <div id="scratchContainer">
+        <div class="canvas">
+            <canvas id="scratch1" width="500" height="300"></canvas>
+        </div>
+        <div class="canvas">
+            <canvas id="scratch2" width="500" height="300"></canvas>
+        </div>
+        <div class="canvas noshow">
+            <canvas id="scratch3" width="500" height="300"></canvas>
+        </div>
+        <div class="canvas noshow">
+            <canvas id="scratch4" width="500" height="300"></canvas>
+        </div>
+        <div class="canvas noshow">
+            <canvas id="scratch5" width="500" height="300"></canvas>
+        </div>
+        <div class="canvas noshow">
+            <canvas id="scratch6" width="500" height="300"></canvas>
+        </div>
+    </div>
+
+    <div class="but">
+        <button class="add" type="button" onclick="add();">유저 추가</button>
+        <button class='remove' type="button" onclick="remove();">유저 제거</button>
+        <button type="button" onclick="run();">섞기</button>
+        <button class='result' type="button" onclick="result();">결과보기</button>
+        <button type="button"><a href="scratch.html">초기화</a></button>
+    </div>
+
+    <script src="/static/js/scratch.js"></script>
+</body>
+
+</html>

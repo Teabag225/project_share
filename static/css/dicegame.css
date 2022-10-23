@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Cafe24Ssurround";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -70,6 +69,7 @@ button {
 button:hover {
   background-color: rgb(191, 232, 218);
 }
+
 /* 주사위 안보이기 */
 .noshow {
   display: none;
@@ -84,4 +84,29 @@ button:hover {
 a {
   text-decoration: none;
   color: black;
+}
+
+/* 폭죽 */
+@keyframes slide-in {
+  0% {
+    transform: scale(2) rotate(60deg);
+    opacity: 0;
+  }
+}
+
+@keyframes bump-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+particule {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  box-shadow: 1px 1px 4px #eb6383;
 }

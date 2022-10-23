@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+.canvas {
+    display: inline-flex;
+    margin: 0 auto;
+    background-image: url('../image/lose.jpeg');
+    background-image: -webkit-image-set(url('../image/lose.jpeg') 2x);
+    background-size: cover;
+    width: 500px;
+    max-width: 500px;
+    height: auto;
+    cursor: crosshair;
+    cursor: url(../image/question-marks.jpeg) 53 53, crosshair;
+}
+
+.canvasWin {
+    display: inline-flex;
+    margin: 0 auto;
+    background-image: url('../image/win.png');
+    background-image: -webkit-image-set(url('../image/win.png') 2x);
+    background-size: cover;
+    width: 500px;
+    max-width: 500px;
+    height: auto;
+    cursor: crosshair;
+    cursor: url(../image/win.png) 53 53, crosshair;
+}
+
+#scratchContainer {
+    text-align: center;
+    font-family: Avenir, sans-serif;
+}
+
+#scratchContainer figcaption {
+    margin-top: 2rem;
+}
+
+/* 텍스트 중앙 정렬 */
+.but {
+    text-align: center;
+}
+
+/* 버튼 */
+button {
+    margin: 30px 0px 30px 30px;
+    width: 80px;
+    height: 30px;
+    font-size: 1rem;
+}
+
+/* 주사위 안보이기 */
+.noshow {
+    display: none;
+}
+
+/* 주사위 보이기 */
+.show {
+    display: inline-flex;
+}
+
+/* 초기화 링크 텍스트 수정 */
+a {
+    text-decoration: none;
+    color: black;
+}
