@@ -1,32 +1,7 @@
-/* 카드
-  
-  div.card-pop {
-    width: 400px;
-    height: 500px;
-    background-color: aliceblue;
-  }
-  
-  div.card-body {
-    margin-top: 30px;
-    margin: 20px;
-  }
-  
-  div#input {
-    margin-left : 100px ;
-  } */
-
 /* @font-face {
   font-family: "Cafe24Ssurround";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
     format("woff");
-  font-weight: normal;
-  font-style: normal;
-} */
-
-/* @font-face {
-  font-family: "ChosunCentennial";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2")
-    format("woff2");
   font-weight: normal;
   font-style: normal;
 } */
@@ -57,44 +32,42 @@ body {
 
 /* 메뉴바 */
 
-.sidenav {
+/* .sidenav {
   display: flex;
   flex-direction: column;
-  font-family: "GyeonggiTitleM";
+  font-family: "GyeonggiTitleM"; */
 
-  height: 100%; /*Full-height: remove this if you want "auto" height */
-  width: 30vw; /* Set the width of the sidebar */
-  /* position: flex; Fixed Sidebar (stay in place on scroll) */
-  /* z-index: 1; Stay on top */
-  /* top: 0; Stay at the top */
-  /* left: 0; */
-  background-color: white; /* Black */
-  /* overflow-x: hidden; Disable horizontal scroll */
-  /* padding-top: 20px; */
-  text-align: center;
-}
+/* height: 100%; Full-height: remove this if you want "auto" height */
+/* width: 30vw; Set the width of the sidebar */
+/* position: flex; Fixed Sidebar (stay in place on scroll) */
+/* z-index: 1; Stay on top */
+/* top: 0; Stay at the top */
+/* left: 0; */
+/* background-color: white; /* Black */
+/* text-align: center; */
+/* } */
 
-img.menu {
-  /* margin: auto; */
-  margin-top: 60px;
+/* img.menu { */
+/* margin: auto; */
+/* margin-top: 60px;
   width: 150px;
-  height: 150px;
-  /* display: flex; */
-  align-items: center;
+  height: 150px; */
+/* display: flex; */
+/* align-items: center;
   position: relative;
-}
+} */
 
-a.cat {
+/* a.cat {
   padding: 5px 20px;
   text-decoration: none;
   font-size: 25px;
   color: black;
   /* display: block; */
-  margin: 10px 50px;
+/* margin: 10px 50px;
   font-weight: 700;
-}
+} */
 
-a.game {
+/* a.game {
   text-decoration: none;
   color: black;
   display: flex;
@@ -108,32 +81,32 @@ a.game {
   transform: translateY(-10px);
   cursor: pointer;
   text-shadow: 12px 12px 20px #28262675;
-}
+} */
 
-.active {
+/* .active {
   color: black;
   /* margin: 0 30px; */
-}
+/* } */
 
-.dropdown-container {
+/* .dropdown-container {
   display: none;
-}
+} */
 
 /* .fa-caret-down {
   float: right;
   padding-right: 8px;
 } */
 
-header.menu {
+/* header.menu {
   width: 30vw;
   background-color: white;
   box-shadow: 5px 5px 10px gray;
   position: relative;
   /* display: flex; */
-  /* flex-direction: column; */
-}
+/* flex-direction: column; */
+/* } */
 
-div.icon {
+/* div.icon {
   text-align: center;
   background-color: black;
   color: white;
@@ -146,6 +119,93 @@ i.bi {
   margin-top: 3px;
   color: white;
   font-size: 30px;
+} */
+
+/* 새 메뉴 바 */
+
+nav.menu-list {
+  width: 30vw;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
+  text-align: center;
+  /* background-color: goldenrod; */
+  border-radius: 50px;
+  /* padding: 30px; */
+  /* width: 300px; */
+  /* height: 600px; */
+  font-family: "GyeonggiTitleM";
+  /* margin-left: 50px; */
+  /* margin-top: 100px; */
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+div.menu-title {
+  margin-left: 15px;
+}
+
+div.icon {
+  display: none;
+}
+
+img.menu-icon {
+  width: 50px;
+  height: 50px;
+}
+
+div.bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.p-none {
+  display: none;
+}
+
+a.ls:hover .p-none {
+  margin-left: 10px;
+  margin-top: 12px;
+  display: block;
+}
+
+a.dropdown-btn:active .p-none {
+  display: block;
+}
+
+a.ls:hover .bg {
+  background-color: indianred;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+}
+
+a.ls {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+div.bg {
+  display: flex;
+  flex-direction: row;
+}
+
+a.game {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.dropdown-container {
+  display: none;
 }
 
 /* 토글 메뉴 */
@@ -192,25 +252,6 @@ a.t-game {
   color: #847f7f;
 }
 
-/* h1.title_small {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
-  padding-bottom: 50px;
-} */
-
-/* a.menu_ls {
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-    text-decoration: none;
-    color: black;
-    font-weight: 300;
-  }
-   */
-
 div.ul-list {
   /* font-size: 1.2rem; */
   display: flex;
@@ -222,6 +263,10 @@ div.ul-list {
   margin-top: 40px;
 
   /* font-weight: 300; */
+}
+
+img.toggle-logo {
+  display: none;
 }
 
 /* 타이틀, 검색창 */
@@ -236,17 +281,31 @@ div.ul-list {
 
 div.main {
   width: 70vw;
+  /* height: 90vh; */
   background-color: white;
   /* position: absolute; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* margin-left: 80px; */
+}
+
+.title-logo {
+  display: flex;
+  flex-direction: row;
+}
+
+img.logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 80px;
 }
 
 h1.title {
   font-size: 4rem;
   margin-top: 100px;
-  text-shadow: 5px 5px 10px gray;
+  text-shadow: 5px 5px 10px rgb(221, 189, 28);
+  color: coral;
 }
 
 span.small {
@@ -261,31 +320,36 @@ div.title_text {
 #search {
   width: 400px;
   height: 45px;
-  border: 3px solid black;
-  border-radius: 10px;
+  border: 3px solid rgb(234, 152, 122);
+  border-radius: 30px;
   padding-left: 20px;
 }
 
 #submit {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   cursor: pointer;
   height: 46px;
   width: 40px;
-  border: 3px solid black;
+  border: none;
   border-radius: 10px;
   background-color: white;
 }
 
-#submit:hover {
-  background-color: gray;
+#submit img {
+  width: 30px;
+  height: 30px;
 }
+
+/* #submit:hover {
+  background-color: rgb(231, 183, 121);
+} */
 
 /* footer */
 
 .container {
   width: 70vw;
   /* margin-top: 100px; */
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   display: flex;
   justify-content: center;
   color: gray;
@@ -348,54 +412,40 @@ a.nav-link {
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    font-family: "ChosunCentennial";
-  }
-
-  header.menu {
-    width: 100vw;
-    height: 200px;
-    /* background-color: white; */
-    box-shadow: 5px 5px 10px gray;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    font-family: "GyeonggiTitleM";
   }
 
   div.main {
     width: 100vw;
+    height: 90vh;
     background-color: white;
-    /* position: relative; */
-    /* display: flex;
-        flex-direction: column;
-        align-items: center; */
-  }
-
-  /* h1.title_small {
-    cursor: pointer;
+    /* position: absolute; */
     display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    padding-bottom: 50px;
-  } */
+    flex-direction: column;
+    align-items: center;
+  }
 
   div.ul-list {
     display: none;
   }
 
-  div.icon {
-    display: flex;
-    position: absolute;
-    margin-top: 20px;
+  nav.menu-list {
     width: 100vw;
-    justify-content: center;
-    align-items: center;
+    height: 10vh;
+    border: none;
+    position: relative;
   }
 
-  img.menu {
-    margin-top: 10px;
+  div.icon {
+    display: flex;
+    /* margin-top: 20px; */
+    justify-content: center;
+  }
 
+  img.logo {
+    /* margin-top: 10px;
     width: 100px;
-    height: 100px;
+    height: 100px; */
     /* display: flex; */
     /* justify-content: center; */
     /* position: relative; */
@@ -403,13 +453,14 @@ a.nav-link {
 
     /* border-radius: 25vw;
     padding: 6px 8px 6px 16px; */
-    margin-left: 240%;
+    /* margin-left: 240%; */
+    display: none;
   }
 
-  div.logo {
+  img.toggle-logo {
     display: flex;
-    /* flex-direction: row; */
-    justify-content: center;
+    width: 100px;
+    height: 100px;
   }
 }
 

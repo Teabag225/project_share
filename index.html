@@ -31,7 +31,7 @@
   </head>
   <body>
     <div class="main-container">
-      <header class="menu">
+      <!-- <header class="menu">
         <div class="sidenav">
           <nav class="list-menu">
             <div class="logo">
@@ -51,13 +51,45 @@
             </div>
           </nav>
         </div>
-      </header>
+      </header> -->
+      <nav class="menu-list">
+        <div>
+          <img class="toggle-logo" src="/static/image/logo.png" />
+        </div>
+        <div href="#" class="icon"><i class="bi bi-list"></i>MENU</div>
+        <div class="ul-list">
+          <div class="menu-title">
+            <h1>MENU</h1>
+          </div>
+          <a class="ls dropdown-btn">
+            <div class="bg">
+              <img class="menu-icon" src="/static/image/game.png" />
+              <p class="p-none">정산게임</p>
+            </div>
+          </a>
+          <div class="dropdown-container">
+            <a class="game" href="/dicegame.html">주사위 게임</a>
+            <a class="game" href="#">Link 2</a>
+            <a class="game" href="#">Link 3</a>
+          </div>
+          <a class="ls hover popup">
+            <div class="bg">
+              <img class="menu-icon" src="/static/image/calculator.png" />
+              <p class="p-none">계산기</p>
+            </div>
+          </a>
+          <a class="ls hover" href="#">
+            <div class="bg">
+              <img class="menu-icon" src="/static/image/team.png" />
+              <p class="p-none">팀원 소개</p>
+            </div>
+          </a>
+        </div>
+      </nav>
 
       <!-- 토글 메뉴 -->
-
       <nav class="toggle-menu d-none">
         <div class="toggle-menu-list">
-          <a class="toggle-ls" href="./index.html">Home</a>
           <a class="toggle-ls toggle-dropdown-btn">
             정산 게임
             <!-- <i class="fa fa-caret-down"></i> -->
@@ -67,17 +99,18 @@
             <a class="t-game" href="#">Link 2</a>
             <a class="t-game" href="#">Link 3</a>
           </div>
-          <a class="toggle-ls popup">계산기</a>
+          <a class="toggle-ls popup2">계산기</a>
           <a class="toggle-ls" href="#">팀원 소개</a>
         </div>
       </nav>
 
       <div class="main">
-        <div>
+        <div class="title-logo">
           <h1 class="title">
             점<span class="small">심</span>메<span class="small">뉴</span
             >추<span class="small">천</span>
           </h1>
+          <img class="logo" src="/static/image/logo.png" alt="점메추" />
         </div>
         <form>
           <input
@@ -95,7 +128,7 @@
         <div class="random">
           <div class="receipt">
             <div class="title_text">
-              <h2>메뉴 랜덤 선택</h2>
+              <h2>오늘 뭐 먹지?</h2>
             </div>
             <div class="menu_print">
               <h2></h2>

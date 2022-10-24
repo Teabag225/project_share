@@ -151,9 +151,10 @@ body {
 }
 
 .receipt .title_text {
-  border-bottom: 1px dashed black;
+  /* border-bottom: 1px dashed black; */
   width: 100%;
   text-align: center;
+  padding-bottom: 200px;
 }
 
 /* .receipt .title_text h1 {
