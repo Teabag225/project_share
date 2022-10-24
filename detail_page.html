@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상세페이지</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="/static/css/normalize.css" />
+
+    <link rel="stylesheet" href="/static/css/detail_page.css" />
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- jquery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="title">
+      <h3>Your Pick</h3>
+      <h1>&lt;을밀대 평양냉면&gt;</h1>
+      <div class="info">
+        <div class="info-info">
+          <img class="info-logo" src="/static/image/information.png" /> 단체석,
+          주차 가능, 포장 가능, 예약 가능
+        </div>
+        <div class="open-info">
+          <img class="info-logo" src="/static/image/open-sign.png" /> 월 ~ 금 AM
+          11:00 ~ PM 10:00
+        </div>
+        <div class="tel-info">
+          <img class="info-logo" src="/static/image/phone.png" /> 02-717-1922
+        </div>
+      </div>
+      <div class="line"></div>
+    </div>
+    <div class="scroll">
+      <img src="/static/image/scroll-bar.png" />
+    </div>
+    <div
+      data-aos="fade-in"
+      data-aos-offset="380"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    >
+      <p class="menuls-title">대표 메뉴</p>
+    </div>
+    <div class="menu">
+      <div
+        data-aos="fade-right"
+        data-aos-offset="400"
+        data-aos-duration="1500"
+        data-aos-once="true"
+      >
+        <div class="menu1">
+          <img src="/static/image/menu1.jpeg" />
+          <div class="text">
+            <p class="name1">물냉면</p>
+            <p class="cost">13,000원</p>
+            <div class="review">
+              <p>" 왜 사람들이 평양 냉면에 빠지게 되는지 알게 되는 맛 "</p>
+              <p>" 육수가 깔끔하고 개운해요 "</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-aos="fade-left"
+        data-aos-offset="430"
+        data-aos-duration="1500"
+        data-aos-once="true"
+      >
+        <div class="menu2">
+          <img src="/static/image/menu2.jpeg" />
+          <div class="text">
+            <p class="name1">녹두전</p>
+            <p class="cost">10,000원</p>
+            <div class="review">
+              <p>" 간은 조금 심심하지만 엄청 바삭하고 고기가 많아요 "</p>
+              <p>" 녹두전은 필수! "</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        href="https://map.naver.com/v5/entry/place/11679611?c=14131508.4741242,4515697.1502568,13,0,0,0,dh&placePath=%2Fhome&entry=plt"
+        target="_blank"
+        class="card-link"
+        >리뷰 & 메뉴 더 보러가기</a
+      >
+    </div>
+
+    <p class="map-title">음식점 위치</p>
+    <div class="map">
+      <div>지도 들어갈 고오오오오오옷</div>
+    </div>
+    <script src="/static/js/detail_page.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
