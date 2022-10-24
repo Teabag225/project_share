@@ -156,7 +156,7 @@ body {
   text-align: center;
 }
 
-.receipt .title_text h1 {
+/* .receipt .title_text h1 {
   font-family: "Orelega One", cursive;
   font-size: 50px;
   margin-bottom: 0;
@@ -164,9 +164,9 @@ body {
 
 .receipt .title_text h3 {
   margin-bottom: 20px;
-}
+} */
 
-.span,
+/* .span,
 em {
   display: inline-block;
   width: 78px;
@@ -174,11 +174,11 @@ em {
   text-align: left;
   position: absolute;
   right: 5px;
-}
+} */
 
-.main_text p:last-child > span {
+/* .main_text p:last-child > span {
   width: 120px;
-}
+} */
 
 .menu_print {
   position: absolute;
@@ -186,81 +186,6 @@ em {
   font-size: 40px;
   color: black;
   transition: 0.5s;
-}
-
-.receipt .main_text {
-  font-family: "Roboto Mono", monospace;
-  position: absolute;
-  left: 30px;
-  bottom: 5%;
-}
-
-.receipt .main_text p > em {
-  font-style: normal;
-}
-
-p:last-child {
-  border-top: 1px dashed black;
-  padding-top: 10px;
-  width: 250px;
-}
-
-.btn_area {
-  position: absolute;
-  bottom: -60px;
-  margin-top: 20px;
-}
-
-body:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-}
-
-button#pick,
-button#reset {
-  background: black;
-  color: #fff;
-  border: none;
-  position: relative;
-  height: 40px;
-  font-size: 1.4em;
-  padding: 0 1em;
-  cursor: pointer;
-  transition: 800ms ease all;
-  outline: none;
-  font-family: "Orelega One", cursive;
-}
-
-button#pick:hover,
-button#reset:hover {
-  background: #fff;
-  color: black;
-}
-
-button.r-btn:before,
-button.r-btn:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 2px;
-  width: 0;
-  background: black;
-  transition: 400ms ease all;
-}
-
-button.r-btn:after {
-  right: inherit;
-  top: inherit;
-  left: 0;
-  bottom: 0;
-}
-
-button.r-btn:hover:before,
-button.r-btn:hover:after {
-  width: 100%;
-  transition: 800ms ease all;
 }
 
 .menu_slot:hover {
