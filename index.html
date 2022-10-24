@@ -52,20 +52,16 @@
           </nav>
         </div>
       </header> -->
+
       <nav class="menu-list">
-        <div>
+        <div class="toggle">
           <img class="toggle-logo" src="/static/image/logo.png" />
+          <div href="#" class="icon"><i class="bi bi-list"></i>MENU</div>
         </div>
-        <div href="#" class="icon"><i class="bi bi-list"></i>MENU</div>
         <div class="ul-list">
-          <div class="menu-title">
-            <h1>MENU</h1>
-          </div>
           <a class="ls dropdown-btn">
-            <div class="bg">
-              <img class="menu-icon" src="/static/image/game.png" />
-              <p class="p-none">정산게임</p>
-            </div>
+            <img class="menu-icon" src="/static/image/game.png" />
+            <p class="p-none">정산게임</p>
           </a>
           <div class="dropdown-container">
             <a class="game" href="/dicegame.html">주사위 게임</a>
@@ -73,16 +69,12 @@
             <a class="game" href="#">Link 3</a>
           </div>
           <a class="ls hover popup">
-            <div class="bg">
-              <img class="menu-icon" src="/static/image/calculator.png" />
-              <p class="p-none">계산기</p>
-            </div>
+            <img class="menu-icon" src="/static/image/calculator.png" />
+            <p class="p-none">계산기</p>
           </a>
           <a class="ls hover" href="#">
-            <div class="bg">
-              <img class="menu-icon" src="/static/image/team.png" />
-              <p class="p-none">팀원 소개</p>
-            </div>
+            <img class="menu-icon" src="/static/image/team.png" />
+            <p class="p-none">팀원 소개</p>
           </a>
         </div>
       </nav>
@@ -106,13 +98,13 @@
 
       <div class="main">
         <div class="title-logo">
+          <img class="logo" src="/static/image/logo.png" alt="점메추" />
           <h1 class="title">
             점<span class="small">심</span>메<span class="small">뉴</span
             >추<span class="small">천</span>
           </h1>
-          <img class="logo" src="/static/image/logo.png" alt="점메추" />
         </div>
-        <form>
+        <!-- <form>
           <input
             id="search"
             type="search"
@@ -122,9 +114,23 @@
             onblur="this.placeholder='찾고 싶은 메뉴를 입력해 주세요'"
           />
           <button id="submit" type="submit">
-            <img src="/static/image/search.svg" />
+            <img src="/static/image/search.png" />
           </button>
-        </form>
+        </form> -->
+        <div class="input-group mb-3">
+          <input
+            id="search"
+            type="search"
+            class="form-control"
+            placeholder="찾고 싶은 메뉴를 입력해 주세요"
+            aria-label="찾고 싶은 메뉴를 입력해 주세요"
+            aria-describedby="button-addon2"
+          />
+          <button class="btn btn-outline-secondary" type="submit" id="submit">
+            <img src="/static/image/search.png" />
+          </button>
+        </div>
+
         <div class="random">
           <div class="receipt">
             <div class="title_text">
@@ -158,6 +164,9 @@
                   <li>제육볶음</li>
                 </ul>
               </div>
+              <p class="click">
+                click<img class="click-logo" src="/static/image/click.png" />
+              </p>
             </div>
           </div>
         </div>
