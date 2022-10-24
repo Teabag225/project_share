@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub Page</title>
+  
+    <link rel="stylesheet" href="/static/css/subpage.css"/>
+    <link rel="stylesheet" href="/static/css/index.css"/>
+    <link rel="stylesheet" href="/static/css/sb.css">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  
+</head>
+<body>
+    <div class="main-container">
+        <header class="menu">
+          <div class="sidenav">
+            <nav class="list-menu">
+              <div class="logo">
+                <img class="menu" src="/static/image/로고1.png" alt="점메추" />
+              </div>
+              <div class="icon"><i class="bi bi-list"></i></div>
+  
+              <ul class="ul-list">
+                <a class="cat" href="#">Home</a>
+                <a class="dropdown-btn">
+                  정산 게임
+                  <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-container">
+                  <a class="cat" href="#">사다리게임</a>
+                  <a class="cat" href="#">Link 2</a>
+                  <a class="cat" href="#">Link 3</a>
+                </div>
+                <a class="cat" href="#">계산기</a>
+                <a class="cat" href="#">팀원 소개</a>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div class="main">
+          <div>
+            <h1 class="title">
+              점<span class="small">심</span>메<span class="small">뉴</span
+              >추<span class="small">천</span>
+            </h1>
+          </div>
+          </div>
+          <!-- 검색 바 옮기기? -->
+          <!-- margin-left: auto로 설정 -->
+          <form>
+            <input
+            id="search"
+            type="search"
+            name="q"
+              placeholder="찾고 싶은 메뉴를 입력해 주세요"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='찾고 싶은 메뉴를 입력해 주세요'"
+            />
+            <!-- <button id="submit" type="submit"> -->
+              <button onlcick="changeStyle()">
+                <img src="/static/image/search.svg"/></button>
+        <div id="cards">
+              <div class="row row-cols-2 row-cols-md-3 g-4">
+                <div class="card" style="width: 18remv;">
+                        <a href="https://google.com">
+                        <img src="/static/image/옥면가.jpg" width="30%" height="40%" class="card-img-top" alt="옥면가">
+                        <div class="card-body">
+                          <h5 class="card-title">옥면가</h5>
+                          <p class="card-text">옥수수면을 사용한 칼국수와 일본라멘의 특징을 입혀 사골을 우려낸 진한 국수</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">별점
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                          </li>
+                          <li class="list-group-item">거리: 332m</li>
+                          <li class="list-group-item">평균 가격: 11,000</li>
+                        </ul>
+                      </a>
+                        </div>
+                      
+                    <!-- </div> -->
+                    
+                    <!-- <div class="col"> -->
+                      <div class="card" style="width: 18remv;">
+                        <a href="https://google.com">
+                        <img src="/static/image/을밀대평양냉면.jpg" width="30%" height="40%" class="card-img-top" alt="을밀대평양냉면">
+                        <div class="card-body">
+                          <h5 class="card-title">을밀대평양냉면</h5>
+                          <p class="card-text">30년 이상 명맥을 유지한 백년가게로 유명한 평양냉면집</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">별점
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                          </li>
+                          <li class="list-group-item">거리: 53m</li>
+                          <li class="list-group-item">평균 가격: 13,000</li>
+                        </ul>
+                      </a>
+                      </div>
+                  <!-- </div> -->
+                  <!-- <div class="col"> -->
+                      <div class="card" style="width: 18remv;">
+                        <a href="https://google.com">
+                        <img src="/static/image/한강서초순대국.jpeg" width="30%" height="40%" class="card-img-top" alt="한강서초수">
+                        <div class="card-body">
+                          <h5 class="card-title">한강서초순대국</h5>
+                          <p class="card-text">양이 푸짐하고 맛이 구수한 순대국밥</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">별점
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                          </li>
+                          <li class="list-group-item">거리: 62m</li>
+                          <li class="list-group-item">평균 가격: 12,000</li>
+                        </ul>
+                      </a>
+                      </div>
+              </div>
+            <!-- </div> -->
+          
+          
+              <!-- col class 수정 --> 
+            <!-- <div class="col">   -->
+                        <div class="row row-cols-2 row-cols-md-3 g-4">
+                        <div class="card" style="width: 18remv;">
+                        <a href="https://google.com">
+                         <img src="/static/image/최고집염리점.jpeg" width="30%" height="40%" class="card-img-top" alt="옥면가">
+                        <div class="card-body">
+                         <h5 class="card-title">최고집 염리점</h5>
+                         <p class="card-text">냉동삼겹살, 돼지껍데기 전문점. 재료가 신선하고 밑반찬이 다양하며 고사리가 나오는 곳</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item">별점
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        </li>
+                        <li class="list-group-item">거리: 127m</li>
+                        <li class="list-group-item">평균 가격: 12,000(1인분)</li>
+                        </ul>
+                        </a>
+                        </div>
+              
+            
+          <!-- </div> -->
+          
+          <!-- <div class="col"> -->
+            <div class="card" style="width: 18remv;">
+              <a href="https://google.com">
+              <img src="/static/image/킹콩부대찌개.jpg" width="30%" height="40%" class="card-img-top" alt="을밀대평양냉면">
+              <div class="card-body">
+                <h5 class="card-title">킹콩부대찌개</h5>
+                <p class="card-text">최상의 재료와 진한 육수로 만든 부대찌개. 공깃밥과 라면사리가 무한리필!!</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">별점
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </li>
+                <li class="list-group-item">거리: 325m</li>
+                <li class="list-group-item">평균 가격: 9,000(1인분)</li>
+              </ul>
+            </a>
+            </div>
+          <!-- </div> -->
+          <!-- <div class="col"> -->
+            <div class="card" style="width: 18remv;">
+              <a href="https://google.com">
+              <img src="/static/image/뉴욕핫도그앤커피.jpg" width="30%" height="40%" class="card-img-top" alt="한강서초수">
+              <div class="card-body">
+                <h5 class="card-title">뉴욕핫도그앤커피</h5>
+                <p class="card-text">핫도그와 커피, 전통음료를 판매하며, 깔끔한 1인용 포장으로 간편하게 먹을 수 있는 집</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">별점
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </li>
+                <li class="list-group-item">거리: 108m</li>
+                <li class="list-group-item">평균 가격: 3,800</li>
+              </ul>
+              </a>
+            </div>
+          </div>
+          
+          
+          <!-- </div> -->
+          
+          <div class="row row-cols-2 row-cols-md-3 g-4">
+            <div class="card" style="width: 18remv;">
+              <a href="https://google.com">
+              <img src="/static/image/수저가.jpg" width="30%" height="40%" class="card-img-top" alt="옥면가">
+              <div class="card-body">
+                <h5 class="card-title">수저가</h5>
+                <p class="card-text">시원한 국물과 속을 확 풀어줄 수 있는 양이 많은 짬뽕집</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">별점
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </li>
+                <li class="list-group-item">거리: 155m</li>
+                <li class="list-group-item">평균 가격: 8,000</li>
+              </ul>
+            </a>
+          </div>
+            
+          <!-- </div> -->
+          
+          <!-- <div class="col"> -->
+            <div class="card" style="width: 18remv;">
+              <a href="https://google.com">
+              <img src="/static/image/너구리초밥.jpg" width="30%" height="40%" class="card-img-top" alt="을밀대평양냉면">
+              <div class="card-body">
+                <h5 class="card-title">너구리초밥</h5>
+                <p class="card-text">점심특선으로 초밥이 땡긴다면 적극 추천하는 일식집</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">별점
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </li>
+                <li class="list-group-item">거리: 170m</li>
+                <li class="list-group-item">평균 가격: 9,900</li>
+              </ul>
+            </a>
+            </div>
+          <!-- </div> -->
+          <!-- <div class="col"> -->
+            <div class="card" style="width: 18remv;">
+              <a href="https://google.com">
+              <img src="/static/image/하돈.jpg" width="30%" height="40%" class="card-img-top" alt="한강서초수">
+              <div class="card-body">
+                <h5 class="card-title">하돈</h5>
+                <p class="card-text">매장이 넓으며 양이 많고 혼밥하기도 좋은 돈까스집</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">별점
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </li>
+                <li class="list-group-item">거리: 230m</li>
+                <li class="list-group-item">평균 가격: 9,500</li>
+              </ul>
+            </a>
+                </div>
+              </div>
+</div>
+
+  
+  
+  
+
+  <script src="/static/js/tindex4.js"></script>
+  <script src="/static/js/sb.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+
+
+</body>
+</html>

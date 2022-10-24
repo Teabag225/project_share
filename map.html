@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>간단한 지도 표시하기</title>
+    <script type="text/javascript"
+        src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=g0j6ej4enr"></script>
+</head>
+
+<body>
+    <div id="map" style="width:100%;height:400px;"></div>
+    <img src="" alt="" width="100px">
+
+    <script>
+        var mapOptions = {
+            center: new naver.maps.LatLng(37.5487041, 126.9455489),
+            zoom: 15
+        };
+
+        var map = new naver.maps.Map('map', mapOptions);
+
+        var HOME_PATH = window.HOME_PATH || '.';
+        var noodle = new naver.maps.LatLng(37.5474432, 126.9455489),
+            map = new naver.maps.Map('map', {
+                center: noodle,
+                zoom: 15
+            }),
+            marker = new naver.maps.Marker({
+                map: map,
+                position: noodle
+            });
+
+        var contentString = [
+            '<div class="iw_inner">',
+            '   <h3>을밀대 평양냉면</h3>',
+            '   <p>서울 마포구 숭문길 24| 찾아가는길 공덕역 2번 출구 대흥역 방향 400m 염리동 사무소 옆.<br />',
+            '       <img src=" ./hhh.jpeg" width="55" height="55" alt="을밀대" class="thumb" /><br />',
+            '       30년 이상 명맥을 유지한 백년가게로 유명한 평양냉면집<br/>',
+            '       <a href="https://map.naver.com/v5/search/%EC%9D%8C%EC%8B%9D%EC%A0%90/place/11679611?c=14130915.0695671,4515697.1502570,15.65,0,0,0,dh&placePath=%3Fentry%253Dpll" target="_blank">을밀대 평양냉면</a>',
+            '   </p>',
+            '</div>'
+        ].join('');
+
+        var contentString = [
+            '<div class="iw_inner">',
+            '   <h3>을밀대 평양냉면</h3>',
+            '   <p>서울 마포구 숭문길 24| 찾아가는길 공덕역 2번 출구 대흥역 방향 400m 염리동 사무소 옆.<br />',
+            '       <img src=" ./hhh.jpeg" width="55" height="55" alt="을밀대" class="thumb" /><br />',
+            '       30년 이상 명맥을 유지한 백년가게로 유명한 평양냉면집<br/>',
+            '       <a href="https://map.naver.com/v5/search/%EC%9D%8C%EC%8B%9D%EC%A0%90/place/11679611?c=14130915.0695671,4515697.1502570,15.65,0,0,0,dh&placePath=%3Fentry%253Dpll" target="_blank">을밀대 평양냉면</a>',
+            '   </p>',
+            '</div>'
+        ].join('');
+        var marker2 = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.5456624, 126.9458924),
+            map: map
+        });
+
+        // var josun = new naver.maps.LatLng(37.5443944, 126.9449385),
+        //     map = new naver.maps.Map('map', {
+        //         center: josun,
+        //         zoom: 15
+        //     }),
+        //     marker2 = new naver.maps.Marker({
+        //         map: map,
+        //         position: josun
+        //     });
+
+        // var contentString = [
+        //     '<div class="iw_inner">',
+        //     '   <h3>조선초가한끼</h3>',
+        //     '   <p>서울 마포구 숭문길 24| 찾아가는길 공덕역 2번 출구 대흥역 방향 400m 염리동 사무소 옆.<br />',
+        //     '       <img src=" ./hhh.jpeg" width="55" height="55" alt="을밀대" class="thumb" /><br />',
+        //     '       우리딸 냉면맛을 알게 해 준 마포냉면맛집<br />',
+        //     '       <a href="https://map.naver.com/v5/search/%EC%9D%8C%EC%8B%9D%EC%A0%90/place/11679611?c=14130915.0695671,4515697.1502570,15.65,0,0,0,dh&placePath=%3Fentry%253Dpll" target="_blank">을밀대 평양냉면</a>',
+        //     '   </p>',
+        //     '</div>'
+        // ].join('');
+
+        var infowindow = new naver.maps.InfoWindow({
+            content: contentString,
+            maxWidth: 200,
+            backgroundColor: "#eee",
+            borderColor: "#2db400",
+            borderWidth: 3,
+            anchorSize: new naver.maps.Size(30, 30),
+            anchorSkew: true,
+            anchorColor: "#eee",
+            pixelOffset: new naver.maps.Point(20, -20)
+        });
+
+        naver.maps.Event.addListener(marker, "click", function (e) {
+            if (infowindow.getMap()) {
+                infowindow.close();
+            } else {
+                infowindow.open(map, marker);
+            }
+        });
+    </script>
+</body>
+
+</html>

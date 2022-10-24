@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form id="menuForm">
+    <div class="wrapper">
+      <h1>우리 정산 해요</h1>
+      
+       <label>메뉴</label> 
+      <input id="menu" type="text"></input>
+
+      <label>가격</label>
+      <input id="price" type="text"></input>
+      <button id="submitButton" type="submit">+</button>
+      </div>
+      <hr>
+    <!--
+    <input type="text" name="menu">
+    <input type="text" name="price">
+    <button type="submit">+</button>
+    -->
+  </form>
+
+  <ol class="lists">
+   
+
+  </ol>
+<hr>
+  <p id="total"></p>
+
+  <script>
+    
+    function userNameInput (e) {
+      //변수선언
+      const menu = document.getElementById('menu').value;
+      const price = document.getElementById('price').value;
+      const result = document.getElementById('result');
+      const newList = document.createElement('li');
+      const ul = document.querySelector('.lists');
+      //const table = document.querySelector('.lists');
+      //const newTr = document.createElement('tr');
+      //const newTd1 = document.createElement('td');
+      //const newTd2 = document.createElement('td');
+      
+      const minusBtn = document.createElement('button');
+      const BtnText = document.createTextNode( '-' );
+
+    
+      newList.textContent = menu + price;
+      
+    
+      //뺴기버튼 -> 리스트에서 삭제
+      minusBtn.addEventListener('click', function(){
+          newList.parentNode.removeChild(newList);
+          minusBtn.parentNode.removeChild(minusBtn);
+      });
+
+      minusBtn.appendChild( BtnText );
+      ul.append(newList, minusBtn);
+
+      // Total 기능
+    
+      
+console.log(document.querySelector('.lists')[0])
+
+    }
+    
+    submitButton.addEventListener('click', userNameInput, false);
+    
+   
+
+
+
+
+  </script>
+
+  
+</body>
+</html>
